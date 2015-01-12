@@ -1,0 +1,130 @@
+<RelativeLayout
+         xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         tools:context="com.example.kulAnadolu.MainActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+   
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7f0000"
+       
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp" 
+        android:background="#7f0000">
+
+        <LinearLayout
+            android:id="@+id/lintarih"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20" >
+              <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.20"
+            android:gravity="left"
+            android:text="TARIHLER"
+            android:textColor="#CCCCCC" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+             android:id="@+id/linetkinlih"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20" >
+              <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.02"
+            android:gravity="left"
+            android:text="ETKİNLİKLER"
+            
+      
+            android:textColor="#CCCCCC" />
+        </LinearLayout>
+      
+        
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7f0000" >
+
+        <LinearLayout
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left" >
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="0dp"
+                android:background="#CCCCCC"
+                android:gravity="center"
+                android:hint="Tarih seçin.."
+                android:textColor="#000000" />
+
+            <ImageButton
+                android:id="@+id/imgDate"
+                android:layout_width="47dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/logo1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="216dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" >
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="105dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="3.34"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnUygula"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="#CCCCCC"
+                android:gravity="center"
+                android:text="Uygula"
+                android:textColor="#000000" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <ListView
+    android:id="@+id/listView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true" 
+    android:background="#CCCCCC">
+</ListView>
+</LinearLayout>
+
+ </RelativeLayout>

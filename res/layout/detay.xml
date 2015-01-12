@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="#FFFFFF">
+
+     <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <Button
+            android:id="@+id/img_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/not" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Name "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adı:"
+                android:textColor="#7f0000"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp" />
+
+           
+
+               
+         
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+              <TextView
+                  android:id="@+id/Location"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Yer:"
+                  android:layout_marginLeft="5dp"
+                  android:textColor="#7f0000"
+                  android:textSize="15sp" />
+
+                <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000000" 
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                
+            <TextView
+                android:id="@+id/StartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Başlangıç:"
+                android:layout_marginLeft="5dp"
+                android:textColor="#7f0000"
+                android:textSize="15sp" />
+            
+            <TextView
+                android:id="@+id/textStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000000" 
+                android:textSize="15sp" />
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+             <TextView
+                 android:id="@+id/EndDate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Bitiş:"
+                 android:layout_marginLeft="5dp"
+                 android:textColor="#7f0000"
+                 android:textSize="15sp" />
+
+              <TextView
+                android:id="@+id/textEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:textColor="#000000" 
+                android:textSize="15sp"/>
+        </TableRow>
+         
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+              <TextView
+                  android:id="@+id/Organizator"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Düzenleyen:"
+                  android:layout_marginLeft="5dp"
+                  android:textColor="#7f0000"
+                  android:textSize="15sp" />
+
+              <TextView
+                android:id="@+id/textOrganizator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:textColor="#000000" 
+                android:textSize="15sp"/>
+              </TableRow>
+             
+         
+       
+             <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" >
+
+              <Button
+                  android:id="@+id/addButton"
+                  android:layout_width="wrap_content"
+                  android:layout_height="30dp"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="110dp"
+                  android:layout_toRightOf="@+id/closeButton"
+                  android:background="#7f0000"
+                  android:text=" Takvime Ekle "
+                
+                  android:layout_marginBottom="10dp"
+                  android:textColor="#FFFFFF" />
+
+              <Button
+                  android:id="@+id/closeButton"
+                  android:layout_width="wrap_content"
+                  android:layout_height="30dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_marginLeft="60dp"
+                   android:layout_marginBottom="10dp"
+                  android:background="#7f0000"
+                  android:text=" Kapat "
+                  android:textColor="#FFFFFF" />
+                  
+              </RelativeLayout>
+               
+    </TableLayout>
+       </HorizontalScrollView>
+     
+</RelativeLayout>

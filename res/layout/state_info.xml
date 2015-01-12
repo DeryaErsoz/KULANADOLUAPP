@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tarih"
+          android:layout_width="wrap_content"
+          android:layout_height="60dp"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="2dp"
+          android:layout_marginTop="0dp"
+          android:background="@drawable/tkvm"
+          android:gravity="center"
+          android:text=""
+          android:textColor="#000000" />
+
+          <TextView
+              android:id="@+id/tur"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_toRightOf="@+id/tarih"
+              android:layout_marginLeft="5dp"
+              android:text=""
+              android:textStyle="bold"
+              android:textColor="#ff000000" />
+
+          <TextView
+              android:id="@+id/adi"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_below="@+id/tur"
+              android:layout_marginTop="5dp"
+               android:layout_marginLeft="5dp"
+              android:layout_toRightOf="@+id/tarih"
+              android:text=""
+              android:textColor="#ff000000" />
+ 
+</RelativeLayout>
